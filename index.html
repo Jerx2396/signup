@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="accountcontainer">
+        <form action="account-email-verification.html">
+            <div class="space">
+                <div>
+                    <p>Create an account</p>
+                </div>
+            </div>
+            <input type="text" name="User Name" class="input" id="UserName" placeholder="Your Username" required>
+            <input type="email" name="email" class="input" id="email" placeholder="Input Your Email" required>
+            <input type="text" name="number" class="input" id="number" placeholder="Mobile Number With Your Country Code" required>
+            <input type="password" name="password" class="input" id="password" placeholder="Create Your Unique Password" required>
+            <button type="submit" class="submit">Sign Up</button>
+        </form>
+        <div class="side">
+            <div>
+                <p><span>Unlimited fun awaits:</span><br/>Experience endless entertainment with our anime and game downloads!</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init("XzXcY2CU7o1WUrzEL");
+    })();
+ </script>
+</body>
+</html>

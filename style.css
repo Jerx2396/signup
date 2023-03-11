@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+.accountcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+@media all and (min-width: 769px){
+    
+    form{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .space{
+        background-color: none;
+        width: 100%;
+        height: 25vh;
+        margin-top: 8vh;
+    }
+    
+    .space div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .space div p{
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    
+    .side{
+        width: 60%;
+        height: 100%;
+        background-image: url("./new-york-hd-entertainment-hub-sd6oxte35en59q82.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .side div{
+        background-color: rgba(226, 245, 39, 0.3);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .side div p{
+        color: white;
+        margin: 0;
+        font-size: 5vh;
+        margin-left: 2vh;
+        width: 80%;
+    }
+    
+    .side div p span{
+        font-weight: bold;
+        font-size: 8vh;
+    }
+    
+    input{
+        all: unset;
+        border-bottom: 1px solid grey;
+        width: 50%;
+        height: 4vh;
+        margin-bottom: 5vh;
+        font-size: 2vh;
+    }
+    
+    .submit{
+        all: unset;
+        background-color: greenyellow;
+        font-size: 2vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-right: 5vh;
+        padding-left: 5vh;
+        cursor: pointer;
+    }
+}
+
+@media all and (max-width: 768px){
+    form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .side div p{
+        color: white;
+        margin: 0;
+        font-size: 5vh;
+        margin-left: 2vh;
+        width: 80%;
+        display: none;
+    }
+
+    .space{
+        background-color: none;
+        width: 100%;
+        height: 35vw;
+        margin-top: 8vw;
+        background-image: url("./new-york-hd-entertainment-hub-sd6oxte35en59q82.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -3vw;
+        margin-bottom: 18vw;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 76% 84%, 75% 100%, 59% 84%, 0 83%);
+    }
+    
+    .space div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(226, 245, 39, 0.3);
+    }
+    .space div p{
+        font-size: 8vw;
+        font-weight: bold;
+        color: white;
+    }
+
+    input{
+        all: unset;
+        border-bottom: 1px solid grey;
+        width: 60%;
+        height: 5vw;
+        margin-bottom: 6vw;
+        font-size: 3vw;
+    }
+    
+    .submit{
+        all: unset;
+        background-color: greenyellow;
+        font-size: 3vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-right: 6vw;
+        padding-left: 6vw;
+        cursor: pointer;
+    }
+}
